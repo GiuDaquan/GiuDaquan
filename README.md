@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/GiuDaquan/GiuDaquan/releases/latest/download/README_public.pdf">Download Public PDF Version</a>
+  <a href="https://github.com/GiuDaquan/GiuDaquan/releases/tag/latest">Download Public PDF Version</a>
   <br><br>
   <h2>GIUSEPPE D'AQUANNO</h2>
   <h3>Threat Intelligence Analyst | Malware Researcher</h3>
