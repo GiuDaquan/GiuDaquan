@@ -78,19 +78,9 @@ jobs:
           md-to-pdf --config-file config.json private_temp.md
           mv private_temp.pdf giuseppe_daquanno_cv_private.pdf
 
-      - name: Checkout Private Repository
-        uses: actions/checkout@v4
+      - name: Upload Private PDF
+        uses: actions/upload-artifact@v4
         with:
-          repository: GiuDaquan/cv-privato
-          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
-          path: repo-cassaforte
-
-      - name: Push Private PDF to Vault
-        run: |
-          cp giuseppe_daquanno_cv_private.pdf repo-cassaforte/
-          cd repo-cassaforte
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add giuseppe_daquanno_cv_private.pdf
-          git commit -m "Aggiornamento automatico CV Privato" || echo "Nessuna modifica da committare"
-          git push
+          name: CV_Private_Download
+          path: giuseppe_daquanno_cv_private.pdf
+          retention-days: 14
