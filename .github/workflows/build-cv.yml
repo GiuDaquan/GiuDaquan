@@ -47,8 +47,9 @@ jobs:
         run: |
           sed -e 's|__EMAIL__|Email available upon request|g' \
               -e 's|__PHONE__|Phone available upon request|g' \
+              -e '/Download Public PDF Version/d' \
               README.md > public_temp.md
-
+              
       - name: Compile Public PDF
         run: |
           md-to-pdf --config-file config.json public_temp.md
@@ -71,6 +72,7 @@ jobs:
         run: |
           sed -e "s|__EMAIL__|$PRIVATE_EMAIL|g" \
               -e "s|__PHONE__|$PRIVATE_PHONE|g" \
+              -e '/Download Public PDF Version/d' \
               README.md > private_temp.md
 
       - name: Compile Private PDF
