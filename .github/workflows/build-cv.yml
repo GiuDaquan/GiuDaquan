@@ -24,6 +24,25 @@ jobs:
       - name: Install md-to-pdf
         run: npm install -g md-to-pdf
 
+      - name: Generate md-to-pdf configuration
+        run: |
+          cat <<EOF > config.json
+          {
+            "pdf_options": {
+              "displayHeaderFooter": false,
+              "margin": {
+                "top": "15mm",
+                "right": "15mm",
+                "bottom": "15mm",
+                "left": "15mm"
+              }
+            },
+            "launch_options": {
+              "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+            }
+          }
+          EOF
+
       - name: Prepare Public Version
         run: |
           sed -e 's|__EMAIL__|Email available upon request|g' \
@@ -32,7 +51,7 @@ jobs:
 
       - name: Compile Public PDF
         run: |
-          md-to-pdf public_temp.md
+          md-to-pdf --config-file config.json public_temp.md
           mv public_temp.pdf giuseppe_daquanno_cv.pdf
 
       - name: Release Public PDF
@@ -56,12 +75,22 @@ jobs:
 
       - name: Compile Private PDF
         run: |
-          md-to-pdf private_temp.md
-          mv private_temp.pdf giuseppe_daquanno_cv.pdf
+          md-to-pdf --config-file config.json private_temp.md
+          mv private_temp.pdf giuseppe_daquanno_cv_private.pdf
 
-      - name: Upload Private PDF
-        uses: actions/upload-artifact@v4
+      - name: Checkout Private Repository
+        uses: actions/checkout@v4
         with:
-          name: CV_Private_Download
-          path: giuseppe_daquanno_cv.pdf
-          retention-days: 14
+          repository: GiuDaquan/cv-privato
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          path: repo-cassaforte
+
+      - name: Push Private PDF to Vault
+        run: |
+          cp giuseppe_daquanno_cv_private.pdf repo-cassaforte/
+          cd repo-cassaforte
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add giuseppe_daquanno_cv_private.pdf
+          git commit -m "Aggiornamento automatico CV Privato" || echo "Nessuna modifica da committare"
+          git push
