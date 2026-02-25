@@ -1,6 +1,4 @@
 <div align="center">
-  <a href="https://github.com/GiuDaquan/GiuDaquan/releases/download/latest/giuseppe_daquanno_cv.pdf">Download Public PDF Version</a>
-  <br><br>
   <h2>GIUSEPPE D'AQUANNO</h2>
   <h3>Threat Intelligence Analyst | Malware Researcher</h3>
   <p>Rome, Italy | <a href="https://www.linkedin.com/in/giuseppedaquanno">linkedin.com/in/giuseppedaquanno</a> | __PHONE__ | __EMAIL__</p>
@@ -50,4 +48,6 @@
 ---
 <div align="center">
   <small>I authorize the processing of my personal data pursuant to Italian Legislative Decree 196/2003 and the GDPR (EU Regulation 2016/679).</small>
+  <br><br>
+  <a href="https://github.com/GiuDaquan/GiuDaquan/releases/download/latest/giuseppe_daquanno_cv.pdf">Download Public PDF Version</a>
 </div>
