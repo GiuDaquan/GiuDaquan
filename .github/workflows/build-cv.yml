@@ -1,0 +1,67 @@
+name: Build and Release ATS-Friendly CV
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install md-to-pdf
+        run: npm install -g md-to-pdf
+
+      - name: Prepare Public Version
+        run: |
+          sed -e 's|__EMAIL__|Email available upon request|g' \
+              -e 's|__PHONE__|Phone available upon request|g' \
+              README.md > public_temp.md
+
+      - name: Compile Public PDF
+        run: |
+          md-to-pdf public_temp.md
+          mv public_temp.pdf giuseppe_daquanno_cv.pdf
+
+      - name: Release Public PDF
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "giuseppe_daquanno_cv.pdf"
+          tag: "latest"
+          name: "Curriculum Vitae (Public Version)"
+          allowUpdates: true
+          makeLatest: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare Private Version
+        env:
+          PRIVATE_EMAIL: ${{ secrets.CV_EMAIL }}
+          PRIVATE_PHONE: ${{ secrets.CV_PHONE }}
+        run: |
+          sed -e "s|__EMAIL__|$PRIVATE_EMAIL|g" \
+              -e "s|__PHONE__|$PRIVATE_PHONE|g" \
+              README.md > private_temp.md
+
+      - name: Compile Private PDF
+        run: |
+          md-to-pdf private_temp.md
+          mv private_temp.pdf giuseppe_daquanno_cv.pdf
+
+      - name: Upload Private PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: CV_Private_Download
+          path: giuseppe_daquanno_cv.pdf
+          retention-days: 14
