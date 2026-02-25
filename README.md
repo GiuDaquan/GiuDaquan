@@ -25,7 +25,7 @@
 
 <h4 align="center">CERTIFICATIONS</h4>
 
-* **[GIAC Reverse Engineering Malware (GREM)](https://www.credly.com/badges/d0607229-754e-4645-8a76-637d6a310158/public_url)** (2025)
+* **[GIAC Reverse Engineering Malware (GREM)](https://www.credly.com/badges/d0607229-754e-4645-8a76-637d6a310158/public_url)** - Global Information Assurance Certification (2025)
 
 <h4 align="center">EDUCATION</h4>
 
