@@ -15,13 +15,13 @@
 * **Accenture Security** | Rome, Italy | *Cyber Threat Intelligence Analyst / Malware Researcher* (2023 – Present)
   * Executed deep-dive reverse engineering on complex malware families including Ransomware and Infostealers.
   * Extracted obfuscated C2 configurations and high-fidelity IOCs to produce tactical Threat Intelligence reports.
-  * Developed and deployed custom YARA rules across enterprise SIEM/EDR infrastructure.
+  * Engineered high-fidelity YARA and detection rules for enterprise SIEM/EDR platforms to track emerging Threat Actor campaigns and minimize false positives.
   * Deobfuscated multi-stage PowerShell and JavaScript loaders to reconstruct entire infection chains.
   * Mapped adversary TTPs to the MITRE ATT&CK framework to profile Threat Actor behaviors.
 
 * **Senato della Repubblica** | Rome, Italy | *Cybersecurity Analyst (Intern)* (2022 – 2023)
   * Engineered custom Python automation tooling for vulnerability scanning and reporting pipelines.
-  * Conducted granular network traffic analysis (PCAP) using Wireshark and Suricata to identify protocol anomalies and unauthorized access attempts.
+  * Conducted granular network traffic analysis (PCAP) using Wireshark and Suricata to extract malicious payloads, profile Command & Control (C2) communications, and identify protocol anomalies.
 
 <h4 align="center">CERTIFICATIONS</h4>
 
@@ -41,7 +41,7 @@
 
 * **Reverse Engineering:** IDA Pro, Ghidra, x64dbg, WinDbg, Radare2, Binary Ninja.
 * **Malware Analysis:** Static/Dynamic Analysis, Unpacking, Deobfuscation, PE/COFF Structure, Config Extraction.
-* **Threat Intelligence & Forensics:** YARA, Memory Forensics (Volatility), Wireshark, Suricata, MITRE ATT&CK.
+* **Threat Intelligence & Detection:** YARA, In-Memory Malware Analysis (Volatility), Wireshark, Suricata, MITRE ATT&CK.
 * **Programming & Scripting:** Assembly (x86/x64), C/C++, Python, Bash, PowerShell.
 * **Operating Systems:** Windows Internals, Linux Internals, Android.
 
