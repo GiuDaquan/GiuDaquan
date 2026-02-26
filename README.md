@@ -1,6 +1,6 @@
 <div align="center">
   <h2>GIUSEPPE D'AQUANNO</h2>
-  <h3>Threat Intelligence Analyst | Malware Researcher</h3>
+  <h3>Threat Intelligence Analyst | Malware Analyst</h3>
   <p>Rome, Italy | <a href="https://www.linkedin.com/in/giuseppedaquanno">LinedkIn</a> | <a href="https://github.com/GiuDaquan">GitHub</a> | __PHONE__ | __EMAIL__</p>
 </div>
 
