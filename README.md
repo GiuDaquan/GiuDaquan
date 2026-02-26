@@ -12,7 +12,7 @@
 
 <h4 align="center">EXPERIENCE</h4>
 
-* **Accenture Security** | Rome, Italy | *Cyber Threat Intelligence Analyst / Malware Researcher* (2023 – Present)
+* **Accenture Security** | Rome, Italy | *Threat Intelligence Analyst / Malware Analyst* (2023 – Present)
   * Executed deep-dive reverse engineering on complex malware families including Ransomware and Infostealers.
   * Extracted obfuscated C2 configurations and high-fidelity IOCs to produce tactical Threat Intelligence reports.
   * Engineered high-fidelity YARA and detection rules for enterprise SIEM/EDR platforms to track emerging Threat Actor campaigns and minimize false positives.
