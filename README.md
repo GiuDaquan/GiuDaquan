@@ -6,20 +6,20 @@
 
 <h4 align="center">PROFESSIONAL SUMMARY</h4>
 
-* **Profile:** Reverse engineer with years of specialized experience in malware analysis and cyber threat intelligence.
+* **Profile:** Reverse engineer with experience in malware analysis and cyber threat intelligence.
 * **Expertise:** Deep technical expertise in low-level OS internals, x86/x64 disassembly, and automated unpacking of complex threats using Python.
-* **Impact:** Proven track record in executing deep-dive reverse engineering of high-profile malware families to extract actionable intelligence, engineer detection rules, and profile Threat Actor TTPs.
+* **Impact:** Proven track record in executing deep-dive reverse engineering of malware to extract actionable intelligence, engineer detection rules, and profile Threat Actor TTPs.
 
 <h4 align="center">EXPERIENCE</h4>
 
-* **Accenture Security** | Rome, Italy | *Threat Intelligence Analyst / Malware Analyst* (2023 – Present)
+* **Accenture Security** | Rome, Italy | *Senior Secuirty Analyst* (2023 – Present)
   * Executed deep-dive reverse engineering on complex malware families including Ransomware and Infostealers.
   * Extracted obfuscated C2 configurations and high-fidelity IOCs to produce tactical Threat Intelligence reports.
   * Engineered high-fidelity YARA and detection rules for enterprise SIEM/EDR platforms to track emerging Threat Actor campaigns and minimize false positives.
   * Deobfuscated multi-stage PowerShell and JavaScript loaders to reconstruct entire infection chains.
   * Mapped adversary TTPs to the MITRE ATT&CK framework to profile Threat Actor behaviors.
 
-* **Senato della Repubblica** | Rome, Italy | *Cybersecurity Analyst (Intern)* (2022 – 2023)
+* **Senato della Repubblica** | Rome, Italy | *Security Analyst (Intern)* (2022 – 2023)
   * Engineered custom Python automation tooling for vulnerability scanning and reporting pipelines.
   * Conducted granular network traffic analysis (PCAP) using Wireshark and Suricata to extract malicious payloads, profile Command & Control (C2) communications, and identify protocol anomalies.
 
