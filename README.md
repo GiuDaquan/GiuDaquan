@@ -13,7 +13,7 @@
 <h4 align="center">EXPERIENCE</h4>
 
 * **Accenture Security** | Rome, Italy | *Senior Security Analyst* (2023 – Present)
-  * Executed deep-dive reverse engineering on complex malware families including Ransomware and Infostealers.
+  * Analyzed malicious payloads and suspicious binaries to support proactive threat detection capabilities.
   * Extracted C2 configurations and IOCs from malware samples to enrich enterprise threat intelligence feeds.
   * Engineered high-fidelity YARA and detection rules for enterprise SIEM/EDR platforms to track emerging Threat Actor campaigns and minimize false positives.
   * Analyzed obfuscated scripts (PowerShell, JavaScript) to identify initial access vectors and evasion techniques.
