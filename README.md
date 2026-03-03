@@ -1,7 +1,7 @@
 <div align="center">
   <h2>GIUSEPPE D'AQUANNO</h2>
   <h3>Malware Analyst</h3>
-  <p>Rome, Italy | <a href="https://www.linkedin.com/in/giuseppedaquanno">LinedkIn</a> | <a href="https://github.com/GiuDaquan">GitHub</a> | __PHONE__ | __EMAIL__</p>
+  <p>Rome, Italy | <a href="https://www.linkedin.com/in/giuseppedaquanno">LinkedIn</a> | <a href="https://github.com/GiuDaquan">GitHub</a> | __PHONE__ | __EMAIL__</p>
 </div>
 
 <h4 align="center">PROFESSIONAL SUMMARY</h4>
